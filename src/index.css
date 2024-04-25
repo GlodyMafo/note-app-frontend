@@ -65,4 +65,17 @@ outline: none;
   display: flex;
   align-items: center;
   background-color: rgb(219, 213, 213);
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+
+}
+
+.search input{
+  border: none;
+  background-color: inherit;
+}
+
+.search input:focus{
+  outline:none;
 }

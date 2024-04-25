@@ -1,10 +1,10 @@
 import { MdSearch } from "react-icons/md"
 
-function Search (){
+function Search ({handleSearchNote}){
     return (
 <div className="search">
     <MdSearch className="search-icons" size="1.3rem"/>
-    <input type="text" placeholder="Tapez un mot clé" />
+    <input onChange={(event)=>handleSearchNote(event.target.value)} type="text" placeholder="Tapez un mot clé" />
 </div>
     )
 }

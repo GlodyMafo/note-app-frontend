@@ -49,7 +49,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <Search handleSearchNote={searchText} />
+        <Search handleSearchNote={setSearchText} />
         <Notes
           notes={notes.filter((note)=>note.text.toLocaleLowerCase().includes(searchText))}
           handleAddNote={addNote}
